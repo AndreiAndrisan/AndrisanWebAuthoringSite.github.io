@@ -6,18 +6,13 @@ bgImg.src = "Assets/bg.png";
 title.src="Assets/Imagine2.png";
 painting.src = "Assets/General.png"
 bgImg2.src = "Assets/bg2.png";
-window.onload = function() {
-    document.body.className += " loaded";
-	console.log("loaded");
-	intro.style.backgroundImage = 'url(' + bgImg.src + ')';
-	names.style.backgroundImage = 'url(' + title.src + ')';
-	general.style.background = 'linear-gradient(#0d0d0d 20%, #1a1a1a 50%, #1a1a1a ,#0d0d0d 20%)';
-	general.style.background = '-moz-linear-gradient(#0d0d0d 20%, #1a1a1a 50%, #1a1a1a ,#0d0d0d 20%)';
-	general.style.background = '-webkit-linear-gradient(#0d0d0d 20%, #1a1a1a 50%, #1a1a1a ,#0d0d0d 20%)';
-	general.style.background = '-o-linear-gradient(#0d0d0d 20%, #1a1a1a 50%, #1a1a1a ,#0d0d0d 20%)';
-	general_painting_face.style.backgroundImage = 'url(' + painting.src + ')';
-	members_background.style.backgroundImage = 'url(' + bgImg2.src + ')';
-};
+$(window).load(function() {
+	$('body').addClass(' loaded');
+	$( '#intro' ).css('background-image','url('+bgImg.src+')');
+	$( '#names' ).css('background-image','url('+title.src+')');
+	$( '#general_painting_face' ).css('background-image','url('+painting.src+')');
+	$( '#members_background' ).css('background-image','url('+bgImg2.src+')');
+});
 $(function(){
 	console.log("loaded");
 	var bottomPos = $(window).scrollTop() + $(window).height();
@@ -72,8 +67,8 @@ $(function(){
 	}
 	)
 	$( ".rectangles-content" ).mouseleave(function() {
-		$('.rectangles').css('filter','grayscale(100%)');
-		$('.rectangles').css('-webkit-filter','grayscale(100%)');
+		$(this).parent().css('filter','grayscale(100%)');
+		$(this).parent().css('-webkit-filter','grayscale(100%)');
 	});
 });
 
