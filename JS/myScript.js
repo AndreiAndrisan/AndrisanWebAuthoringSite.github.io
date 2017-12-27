@@ -1,14 +1,11 @@
-var bgImg = new Image();
 var title = new Image();
 var painting = new Image();
 var bgImg2 = new Image();
-bgImg.src = "Assets/bg.png";
 title.src="Assets/Imagine2.png";
 painting.src = "Assets/General.png"
 bgImg2.src = "Assets/bg2.png";
 $(window).load(function() {
-	$('body').addClass(' loaded');
-	$( '#intro' ).css('background-image','url('+bgImg.src+')');
+	$( 'body' ).addClass(' loaded');
 	$( '#names' ).css('background-image','url('+title.src+')');
 	$( '#general_painting_face' ).css('background-image','url('+painting.src+')');
 	$( '#members_background' ).css('background-image','url('+bgImg2.src+')');
@@ -57,15 +54,20 @@ $(function(){
 		$('#former-members h1').addClass('fadeInUp');
         $triggered_times_members=1;  
 		}
-	var causeRepaintsOn = $("h1, p");
+	var causeRepaintsOn = $('h1, p');
 	$(window).resize(function() {
 		causeRepaintsOn.css("z-index", 1);
 	});
 	$('.rectangles-content').hover(function() {
 		$(this).parent().css('filter','none');
 		$(this).parent().css('-webkit-filter','none');
-	}
-	)
+		setTimeout(function() {
+		$('.rectangles-content p,.rectangles-content h1').addClass('text-shadow');},200);
+
+	},
+		function () {
+        $('.rectangles-content p,.rectangles-content h1').removeClass('text-shadow');}
+	);
 	$( ".rectangles-content" ).mouseleave(function() {
 		$(this).parent().css('filter','grayscale(100%)');
 		$(this).parent().css('-webkit-filter','grayscale(100%)');
