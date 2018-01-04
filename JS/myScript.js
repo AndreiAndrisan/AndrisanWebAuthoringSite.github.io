@@ -38,6 +38,7 @@ $(function(){
                 $('.rectangles').addClass('fadeInUp');
 				$('#current-members h1').addClass('fadeInUp');
 				$('#former-members h1').addClass('fadeInUp');
+				$('.circles').addClass('fadeInUp');
                 $triggered_times_members=1; 
             }
     });
@@ -52,6 +53,7 @@ $(function(){
 		$('.rectangles').addClass('fadeInUp');
 		$('#current-members h1').addClass('fadeInUp');
 		$('#former-members h1').addClass('fadeInUp');
+		$('.circles').addClass('fadeInUp');
         $triggered_times_members=1;  
 		}
 	var causeRepaintsOn = $('h1, p');
@@ -62,11 +64,11 @@ $(function(){
 		$(this).parent().css('filter','none');
 		$(this).parent().css('-webkit-filter','none');
 		setTimeout(function() {
-		$('.rectangles-content p,.rectangles-content h1').addClass('text-shadow');},200);
+		$('.rectangles-content p,.rectangles-content h1,.rectangles-content h2').addClass('text-shadow');},200);
 
 	},
 		function () {
-        $('.rectangles-content p,.rectangles-content h1').removeClass('text-shadow');}
+        $('.rectangles-content p,.rectangles-content h1,.rectangles-content h2').removeClass('text-shadow');}
 	);
 	$( ".rectangles-content" ).mouseleave(function() {
 		$(this).parent().css('filter','grayscale(100%)');
