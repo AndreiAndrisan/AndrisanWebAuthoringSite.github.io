@@ -380,7 +380,6 @@ body.loaded #names{
 	background:-webkit-linear-gradient(#0d0d0d 20%, #1a1a1a 50%, #1a1a1a ,#0d0d0d 20%);
 	background:-o-linear-gradient(#0d0d0d 20%, #1a1a1a 50%, #1a1a1a ,#0d0d0d 20%);
 }
-
 .title{
 	text-align:center;
 	padding-top: 2em;
@@ -746,7 +745,7 @@ p{
     box-shadow: 20px -5px 25px 0 rgba(0, 0, 0, 0.5);
 }
 }
--webkit-@keyframes fadeInUp{
+-webkit-@keyframes Up{
 0% {
     box-shadow: none;
 }
@@ -758,7 +757,7 @@ p{
     box-shadow: 20px -5px 25px 0 rgba(0, 0, 0, 0.5);
 }
 }
--moz-@keyframes fadeInUp{
+-moz-@keyframes Up{
 0% {
     box-shadow: none;
 }
@@ -770,7 +769,7 @@ p{
     box-shadow: 20px -5px 25px 0 rgba(0, 0, 0, 0.5);
 }
 }
--o-@keyframes fadeInUp{
+-o-@keyframes Up{
 0% {
      box-shadow: none;
 }
@@ -1145,4 +1144,224 @@ p{
 	width:100%;
 	height:100%;
 	background: radial-gradient(#0000, #0d0d0d 70%);
+}
+#albums{
+	position:relative;
+	background:black;
+	padding-bottom:5em;
+}
+#albums-title{
+	padding-top:1em;
+	margin-bottom: 0.5em;
+}
+#carousel{
+    width:100vw;
+    height:50vw;
+    position:relative;
+    clear:both;
+    overflow:hidden;
+	text-align:center;
+}
+#carousel a{
+    display:block;
+}
+.album-name{
+	position:absolute;
+    top:80%;
+	color:transparent;
+	background-image: -moz-linear-gradient(white, #4d4d4d, #4d4d4d);
+	background-image: -webkit-linear-gradient(white, #4d4d4d, #4d4d4d);
+	background-image: -o-linear-gradient(white, #4d4d4d, #4d4d4d);
+	background-image: -ms-linear-gradient(white, #4d4d4d, #4d4d4d);
+	-webkit-background-clip: text;
+	left: 50%;
+	line-height: 80%;
+	font-size:3vw;
+	transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	text-transform:uppercase;
+	display:none;
+	-webkit-transition: -webkit-all 1s;
+    transition: all 1s;
+}
+.album-name::before{
+    content:attr(data-text);
+	-moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+	-webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(30%, transparent), to(rgba(255, 255, 255, 0.6)));
+	position:absolute;
+	background-image: -moz-linear-gradient(white, #4d4d4d, #4d4d4d);
+	background-image: -webkit-linear-gradient(white, #4d4d4d, #4d4d4d);
+	background-image: -o-linear-gradient(white, #4d4d4d, #4d4d4d);
+	background-image: -ms-linear-gradient(white, #4d4d4d, #4d4d4d);
+	-webkit-background-clip: text;
+	top:100%;
+	animation:fadeInUp3 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	-o-animation:fadeInUp3 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	-moz-animation:fadeInUp3 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	-webkit-animation:fadeInUp3 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	-webkit-transition: -webkit-all 0.75s;
+    transition: all 0.75s;
+}
+.carousel-center + .album-name{
+	display:block;
+}
+#carousel img{
+    visibility:hidden;
+    cursor:pointer;
+	height:20vw;
+	width:20vw;
+	-webkit-box-reflect: below 0 -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(40%, transparent), to(rgba(255, 255, 255, 0.2)));
+	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.9);
+}
+#carousel img::before{
+	a-moz-transform: scaleY(-1);
+    a-o-transform: scaleY(-1);
+    a-webkit-transform: scaleY(-1);
+    atransform: scaleY(-1);
+	a-webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(40%, transparent), to(rgba(255, 255, 255, 0.2)));
+	aposition:absolute;
+	atop:100%;
+    aleft:0px;
+}
+#prev{
+	position:absolute;
+	top:45%;
+	bottom:0;
+	font-size:10vw;
+	left:3vw;
+}
+#prev:hover{
+	opacity:0.8;
+}
+#next{
+	position:absolute;
+	top:45%;
+	bottom:0;
+	font-size:10vw;
+	left:91vw;
+}
+#next:hover{
+	opacity:0.8;
+}
+@keyframes fadeInUp2{
+0% {
+    top:75%;
+}
+100% {
+    top:80%;
+}
+}
+-webkit-@keyframes fadeInUp2{
+0% {
+    top:75%;
+}
+100% {
+    top:80%;
+}
+}
+-o-@keyframes fadeInUp2{
+0% {
+    top:75%;
+}
+100% {
+    top:80%;
+}
+}
+-moz-@keyframes fadeInUp2{
+0% {
+    top:75%;
+}
+100% {
+    top:80%;
+}
+}
+@keyframes fadeInUp3{
+0% {
+    top:250%;
+		-webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(80%, transparent), to(rgba(255, 255, 255, 0.3)));
+}
+37,5% {
+    top:200%;
+		-webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(70%, transparent), to(rgba(255, 255, 255, 0.4)));
+}
+67,5% {
+    top:150%;
+		-webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(40%, transparent), to(rgba(255, 255, 255, 0.5)));
+}
+100% {
+    top:100%;
+		-webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(30%, transparent), to(rgba(255, 255, 255, 0.6)));
+}
+}
+-moz-@keyframes fadeInUp3{
+0% {
+    top:250%;
+		-webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(80%, transparent), to(rgba(255, 255, 255, 0.3)));
+}
+37,5% {
+    top:200%;
+		-webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(70%, transparent), to(rgba(255, 255, 255, 0.4)));
+}
+67,5% {
+    top:150%;
+		-webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(40%, transparent), to(rgba(255, 255, 255, 0.5)));
+}
+100% {
+    top:100%;
+		-webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(30%, transparent), to(rgba(255, 255, 255, 0.6)));
+}
+}
+-o-@keyframes fadeInUp3{
+0% {
+    top:250%;
+		-webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(80%, transparent), to(rgba(255, 255, 255, 0.3)));
+}
+37,5% {
+    top:200%;
+		-webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(70%, transparent), to(rgba(255, 255, 255, 0.4)));
+}
+67,5% {
+    top:150%;
+		-webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(40%, transparent), to(rgba(255, 255, 255, 0.5)));
+}
+100% {
+    top:100%;
+		-webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(30%, transparent), to(rgba(255, 255, 255, 0.6)));
+}
+}
+-webkit-@keyframes fadeInUp3{
+0% {
+    top:250%;
+		-webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(80%, transparent), to(rgba(255, 255, 255, 0.3)));
+}
+37,5% {
+    top:200%;
+		-webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(70%, transparent), to(rgba(255, 255, 255, 0.4)));
+}
+67,5% {
+    top:150%;
+		-webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(40%, transparent), to(rgba(255, 255, 255, 0.5)));
+}
+100% {
+    top:100%;
+		-webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(30%, transparent), to(rgba(255, 255, 255, 0.6)));
+}
+}
+.fadeInUp2{
+	-webkit-animation-name: fadeInUp2;
+	-webkit-animation-duration:1s;
+	-webkit-animation-timing-function: ease;
+	-moz-animation-name: fadeInUp2;
+	-moz-animation-duration:1s;
+	-moz-animation-timing-function: ease;
+    -o-animation-name: fadeInUp2;
+	-o-animation-duration:1s;
+	-o-animation-timing-function: ease;
+    animation-name: fadeInUp2;
+	animation-duration:1s;
+	animation-timing-function: ease;
 }
