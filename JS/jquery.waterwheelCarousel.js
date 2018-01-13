@@ -159,6 +159,15 @@
       // perform the calcations based on our user options
       var horizonOffset = options.horizonOffset;
       var separation = options.separation;
+	  /*if (765 >= $('body').innerWidth()) {
+			separation = 150;
+		}
+	  if (1080 <= $('body').innerWidth()) {
+			separation = 250;
+		}
+	  if (450 >= $('body').innerWidth()) {
+			separation = 125;
+		}*/
       for (var i = 1; i <= options.flankingItems + 2; i++) {
         if (i > 1) {
           horizonOffset *= options.horizonOffsetMultiplier;

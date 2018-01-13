@@ -4,10 +4,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="CSS/style.css" />
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="CSS/styleAlbumPlaylist.css" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="JS/jquery.waterwheelCarousel.js"></script>
+	<script type="text/javascript" src="JS/jquery.ui.touch-punch.js"></script>
 	<script type="text/javascript" src="JS/myScript.js"></script>
-	<script type="text/javascript" src="JS/myTrack.js"></script>
 	<title>Exercise</title>
 </head>
 <body>
@@ -21,16 +23,16 @@
 				<span></span>
 				<ul id="menu">
 					<li>
-						<a href="#general" title="General">General</a>
+						<a href="#general" id="GeneralM">General</a>
 					</li>
 					<li>
-						<a href="#members" title="Members">Members</a>
+						<a href="#members" id="MembersM">Members</a>
 					</li>
 					<li>
-						<a href="#albums" title="Albums">Albums</a>
+						<a href="#albums" id="AlbumsM">Albums</a>
 					</li>
 					<li>
-						<a href="#playlist" title="Playlist">Playlist</a>
+						<a href="#playlist" id="PlaylistM">Playlist</a>
 					</li>
 				</ul>
 			</div>
@@ -61,9 +63,12 @@
 			</h1>
 			<p>&nbsp&nbsp&nbsp&nbsp Linkin Park is an American rock band from Agoura Hills, California. Formed in 1996, the band rose to international fame with their debut album Hybrid Theory (2000), which was certified Diamond by the RIAA in 2005 and multi-Platinum in several other countries. Their following studio album Meteora continued the band's success, topping the Billboard 200 album chart in 2003, and was followed by extensive touring and charity work.<br>
 
-		<br>&nbsp&nbsp&nbsp&nbspHaving adapted nu metal and rap metal to a radio-friendly yet densely layered style in Hybrid Theory and Meteora, the band explored other genres on their next studio album, Minutes to Midnight (2007). The album topped the Billboard charts and had the third-best debut week of any album that year. The band continued to explore a wider variation of musical types in their fourth album, A Thousand Suns (2010), layering their music with more electronic sounds. Their fifth album, Living Things (2012), combines musical elements from all of their previous records. Their sixth album, The Hunting Party (2014), returned to a heavier rock sound. Their seventh album One More Light, a more electronic and pop-oriented record, was released on May 19, 2017.<br>
+			<br>&nbsp&nbsp&nbsp&nbspHaving adapted nu metal and rap metal to a radio-friendly yet densely layered style in Hybrid Theory and Meteora, the band explored other genres on their next studio album, Minutes to Midnight (2007). The album topped the Billboard charts and had the third-best debut week of any album that year. The band continued to explore a wider variation of musical types in their fourth album, A Thousand Suns (2010), layering their music with more electronic sounds. Their fifth album, Living Things (2012), combines musical elements from all of their previous records. Their sixth album, The Hunting Party (2014), returned to a heavier rock sound. Their seventh album One More Light, a more electronic and pop-oriented record, was released on May 19, 2017.<br>
 
-		<br>&nbsp&nbsp&nbsp&nbspIn 2003, MTV2 named Linkin Park the sixth-greatest band of the music video era and the third-best of the new millennium. Billboard ranked Linkin Park No. 19 on the Best Artists of the Decade chart. In 2012, the band was voted as the greatest artist of the 2000s in a Bracket Madness poll on VH1. In 2014, the band was declared as the Biggest Rock Band in the World Right Now by Kerrang!. As the best-selling band of the 21st century and one of the world's best-selling music artists overall, Linkin Park has sold more than 68 million records worldwide and has won two Grammy Awards.</p>	
+			<br>&nbsp&nbsp&nbsp&nbspIn 2003, MTV2 named Linkin Park the sixth-greatest band of the music video era and the third-best of the new millennium. Billboard ranked Linkin Park No. 19 on the Best Artists of the Decade chart. In 2012, the band was voted as the greatest artist of the 2000s in a Bracket Madness poll on VH1. In 2014, the band was declared as the Biggest Rock Band in the World Right Now by Kerrang!. As the best-selling band of the 21st century and one of the world's best-selling music artists overall, Linkin Park has sold more than 68 million records worldwide and has won two Grammy Awards.</p>	
+			<p class="mozilla-only" >&nbsp&nbsp&nbsp&nbsp Linkin Park is an American rock band from Agoura Hills, California. Formed in 1996, the band rose to international fame with their debut album Hybrid Theory (2000), which was certified Diamond by the RIAA in 2005 and multi-Platinum in several other countries. Their following studio album Meteora continued the band's success, topping the Billboard 200 album chart in 2003, and was followed by extensive touring and charity work.<br></p>
+			<p class="mozilla-only" >&nbsp&nbsp&nbsp&nbspHaving adapted nu metal and rap metal to a radio-friendly yet densely layered style in Hybrid Theory and Meteora, the band explored other genres on their next studio album, Minutes to Midnight (2007). The album topped the Billboard charts and had the third-best debut week of any album that year. The band continued to explore a wider variation of musical types in their fourth album, A Thousand Suns (2010), layering their music with more electronic sounds. Their fifth album, Living Things (2012), combines musical elements from all of their previous records. Their sixth album, The Hunting Party (2014), returned to a heavier rock sound. Their seventh album One More Light, a more electronic and pop-oriented record, was released on May 19, 2017.<br></p>
+			<p class="mozilla-only" >&nbsp&nbsp&nbsp&nbspIn 2003, MTV2 named Linkin Park the sixth-greatest band of the music video era and the third-best of the new millennium. Billboard ranked Linkin Park No. 19 on the Best Artists of the Decade chart. In 2012, the band was voted as the greatest artist of the 2000s in a Bracket Madness poll on VH1. In 2014, the band was declared as the Biggest Rock Band in the World Right Now by Kerrang!. As the best-selling band of the 21st century and one of the world's best-selling music artists overall, Linkin Park has sold more than 68 million records worldwide and has won two Grammy Awards.</p>
 		</div>
 	</section>
 	<section id="members">
@@ -117,7 +122,7 @@
 					<img src="Assets/Instruments/Mic1.png">
 					<p>Lead vocals</p>
 					<h1>Chester Bennington</h1>
-					<h2>(1999-2017)</h2>
+					<h2>(Died in 2017)</h2>
 				</div>
 			</figure>
 			<figure class="rectangles">
@@ -131,19 +136,554 @@
 	</section>
 	<section id="albums">
 		<div id="carousel">
-		  <a href="#"><img src="Assets/Covers/Studio Albums/Linkin_Park_-_Hybrid_Theory.png" id="item-1" /><h1 class="album-name" data-text="Hybrid Theory">Hybrid Theory</h1></a>
-		  <a href="#"><img src="Assets/Covers/Remix Albums/Linkin_Park_-_Reanimation.png" id="item-2" /><h1 class="album-name" data-text="Reanimation">Reanimation</h1></a>
-		  <a href="#"><img src="Assets/Covers/Studio Albums/Linkin_Park_-_Meteora.png" id="item-3" /><h1 class="album-name" data-text="Meteora">Meteora</h1></a>
-		  <a href="#"><img src="Assets/Covers/Studio Albums/Linkin_Park_-_Minutes_to_Midnight.png" id="item-4" /><h1 class="album-name" data-text="Minutes to Midnight">Minutes to Midnight</h1></a>
-		  <a href="#"><img src="Assets/Covers/Linkin_Park_-_New_Divide.png" id="item-5" /><h1 class="album-name" data-text="New Divide  (Single)">New Divide<br>(Single)</h1></a></a>
-		  <a href="#"><img src="Assets/Covers/Studio Albums/Linkin_Park_-_A_Thousand_Suns.png" id="item-6" /><h1 class="album-name" data-text="A Thousand Suns">A Thousand Suns</h1></a>
-		  <a href="#"><img src="Assets/Covers/Studio Albums/Linkin_Park_-_Living_Things.png" id="item-7" /><h1 class="album-name" data-text="Living Things">Living Things</h1></a>
-		  <a href="#"><img src="Assets/Covers/Remix Albums/Linkin_Park_-_Recharged.png" id="item-8" /><h1 class="album-name" data-text="Recharged">Recharged</h1></a>
-		  <a href="#"><img src="Assets/Covers/Studio Albums/Linkin_Park_-_The_Hunting_Party.png" id="item-9" /><h1 class="album-name" data-text="The Hunting Party">The Hunting Party</h1></a>
-		  <a href="#"><img src="Assets/Covers/Studio Albums/Linkin_Park_-_One_More_Light.png" id="item-10" /><h1 class="album-name" data-text="One More Light">One More Light</h1></a>
+		  <a href="#"><img src="Assets/Covers/Hybrid Theory.png" id="item-1" /><h1 class="album_name" data-text="Hybrid Theory">Hybrid Theory</h1></a>
+		  <a href="#"><img src="Assets/Covers/Reanimation.png" id="item-2" /><h1 class="album_name" data-text="Reanimation">Reanimation</h1></a>
+		  <a href="#"><img src="Assets/Covers/Meteora.png" id="item-3" /><h1 class="album_name" data-text="Meteora">Meteora</h1></a>
+		  <a href="#"><img src="Assets/Covers/Minutes to Midnight.png" id="item-4" /><h1 class="album_name" data-text="Minutes to Midnight">Minutes to Midnight</h1></a>
+		  <a href="#"><img src="Assets/Covers/New Divide.png" id="item-5" /><h1 class="album_name" data-text="New Divide  (Single)">New Divide<br>(Single)</h1></a></a>
+		  <a href="#"><img src="Assets/Covers/A Thousand Suns.png" id="item-6" /><h1 class="album_name" data-text="A Thousand Suns">A Thousand Suns</h1></a>
+		  <a href="#"><img src="Assets/Covers/Living Things.png" id="item-7" /><h1 class="album_name" data-text="Living Things">Living Things</h1></a>
+		  <a href="#"><img src="Assets/Covers/Recharged.png" id="item-8" /><h1 class="album_name" data-text="Recharged">Recharged</h1></a>
+		  <a href="#"><img src="Assets/Covers/The Hunting Party.png" id="item-9" /><h1 class="album_name" data-text="The Hunting Party">The Hunting Party</h1></a>
+		  <a href="#"><img src="Assets/Covers/One More Light.png" id="item-10" /><h1 class="album_name" data-text="One More Light">One More Light</h1></a>
 		</div>
 		<a href="#" id="prev"><</a>
 		<a href="#" id="next">></a>
 	</section>
+	<div class="albums-songs" album-track="item-1">
+		<div class="container">
+			<button class="close-button" >X</button>
+			<button class="playlist-button"></button>
+			<div class="audio-image">
+				<img class="cover" />
+			</div>
+			<div class="audio-player">
+			<div class="audio-info">
+				<span></span>
+				<h1 class="album-names"></h1>
+				<p class="song-name"></p>
+			</div>
+			<ul class="album-playlist connectedSortable connect" >
+				<li song="Linkin Park - Papercut.mp3" cover="Hybrid Theory.png" album-name="Hybrid Theory">Papercut</li>
+				<li song="Linkin Park - One Step Closer.mp3" cover="Hybrid Theory.png" album-name="Hybrid Theory">One Step Closer</li>
+				<li song="Linkin Park - With You.mp3" cover="Hybrid Theory.png" album-name="Hybrid Theory">With You</li>
+				<li song="Linkin Park - Points Of Authority.mp3" cover="Hybrid Theory.png" album-name="Hybrid Theory">Points Of Authority</li>
+				<li song="Linkin Park - Crawling.mp3" cover="Hybrid Theory.png" album-name="Hybrid Theory">Crawling</li>
+				<li song="Linkin Park - Runaway.mp3" cover="Hybrid Theory.png" album-name="Hybrid Theory">Runaway</li>
+				<li song="Linkin Park - By Myself.mp3" cover="Hybrid Theory.png" album-name="Hybrid Theory">By Myself</li>
+				<li song="Linkin Park - In The End.mp3" cover="Hybrid Theory.png" album-name="Hybrid Theory">In The End</li>
+				<li song="Linkin Park - A Place For My Head.mp3" cover="Hybrid Theory.png" album-name="Hybrid Theory">A Place For My Head</li>
+				<li song="Linkin Park - Forgotten.mp3" cover="Hybrid Theory.png" album-name="Hybrid Theory">Forgotten</li>
+				<li song="Linkin Park - Cure For The Itch.mp3" cover="Hybrid Theory.png" album-name="Hybrid Theory">Cure For The Itch</li>
+				<li song="Linkin Park - Pushing Me Away.mp3" cover="Hybrid Theory.png" album-name="Hybrid Theory">Pushing Me Away</li>
+				<li song="Linkin Park - High Voltage.mp3" cover="Hybrid Theory.png" album-name="Hybrid Theory">High Voltage</li>
+			</ul>
+			<div class="tracker">
+				<div class="progressBar">
+					<span class="progress"></span>
+				</div>
+				<span class="currentTime"></span>/<span class="duration"></span>
+			</div>
+			<div class="buttons">
+				<span>
+					<button class="prev"></button>
+					<button class="play"></button>
+					<button class="pause"></button>
+					<button class="stop"></button>
+					<button class="next"></button>
+				</span>
+				</div>
+				<div class="volume">
+					<button class="volume-button" ></button>
+					<input class="volume-bar" type="range" min="0" max="10" value="5" />
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="albums-songs" album-track="item-2">
+		<div class="container">
+			<button class="close-button" >X</button>
+			<button class="playlist-button"></button>
+			<div class="audio-image">
+				<img class="cover" />
+			</div>
+			<div class="audio-player">
+			<div class="audio-info">
+				<h1 class="album-names"></h1><br>
+				<p class="song-name"></p>
+			</div>
+			<ul class="album-playlist connectedSortable connect" >
+				<li song="01 - Opening.mp3" cover="Reanimation.png" album-name="Reanimation">Opening</li>
+				<li song="02 - Pts.Of.Athrty.mp3" cover="Reanimation.png" album-name="Reanimation">Pts.Of.Athrty</li>
+				<li song="03 - Enth E Nd.mp3" cover="Reanimation.png" album-name="Reanimation">Enth E Nd</li>
+				<li song="04 - [Chali].mp3" cover="Reanimation.png" album-name="Reanimation">[Chali]</li>
+				<li song="05 - Frgt-10.mp3" cover="Reanimation.png" album-name="Reanimation">Frgt-10</li>
+				<li song="06 - P5hng Me A-Wy.mp3" cover="Reanimation.png" album-name="Reanimation">P5hng Me A-Wy</li>
+				<li song="07 - Plc.4 Mie Haed.mp3" cover="Reanimation.png" album-name="Reanimation">Plc.4 Mie Haed.</li>
+				<li song="08 - X-Ecutioner Style.mp3" cover="Reanimation.png" album-name="Reanimation">X-Ecutioner Style</li>
+				<li song="09 - H! Vltg3.mp3" cover="Reanimation.png" album-name="Reanimation">H! Vltg3</li>
+				<li song="10 - Riff Raff.mp3" cover="Reanimation.png" album-name="Reanimation">Riff Raff</li>
+				<li song="11 - Wth-You.mp3" cover="Reanimation.png" album-name="Reanimation">Wth-You</li>
+				<li song="12 - Ntr-Mssion.mp3" cover="Reanimation.png" album-name="Reanimation">Ntr-Mssion</li>
+				<li song="13 - Ppr-Kut.mp3" cover="Reanimation.png" album-name="Reanimation">Ppr-Kut</li>
+				<li song="14 - Rnw@Y.mp3" cover="Reanimation.png" album-name="Reanimation">Rnw@Y</li>
+				<li song="15 - My-Dsmbr.mp3" cover="Reanimation.png" album-name="Reanimation">My-Dsmbr</li>
+				<li song="16 - [Stef].mp3" cover="Reanimation.png" album-name="Reanimation">[Stef]</li>
+				<li song="17 - By_Myslf.mp3" cover="Reanimation.png" album-name="Reanimation">By_Myslf</li>
+				<li song="18 - Kyur4 Th Ich.mp3" cover="Reanimation.png" album-name="Reanimation">Kyur4 Th Ich</li>
+				<li song="19 - 1stp Klosr.mp3" cover="Reanimation.png" album-name="Reanimation">1stp Klosr</li>
+				<li song="20 - Krwlng.mp3" cover="Reanimation.png" album-name="Reanimation">Krwlng</li>
+			</ul>
+			<div class="tracker">
+				<div class="progressBar">
+					<span class="progress"></span>
+				</div>
+				<span class="currentTime"></span>/<span class="duration"></span>
+			</div>
+			<div class="buttons">
+				<span>
+					<button class="prev"></button>
+					<button class="play"></button>
+					<button class="pause"></button>
+					<button class="stop"></button>
+					<button class="next"></button>
+				</span>
+				</div>
+				<div class="volume">
+					<button class="volume-button" ></button>
+					<input class="volume-bar" type="range" min="0" max="10" value="5" />
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="albums-songs" album-track="item-3">
+		<div class="container">
+			<button class="close-button" >X</button>
+			<button class="playlist-button"></button>
+			<div class="audio-image">
+				<img class="cover" />
+			</div>
+			<div class="audio-player">
+			<div class="audio-info">
+				<h1 class="album-names"></h1>
+				<p class="song-name"></p>
+			</div>
+			<ul class="album-playlist connectedSortable connect" >
+				<li song="01 - Foreword.mp3" cover="Meteora.png" album-name="Meteora">Foreword</li>
+				<li song="02 - Don't Stay.mp3" cover="Meteora.png" album-name="Meteora">Don't Stay</li>
+				<li song="03 - Somewhere I Belong.mp3" cover="Meteora.png" album-name="Meteora">Somewhere I Belong</li>
+				<li song="04 - Lying from You.mp3" cover="Meteora.png" album-name="Meteora">Lying from You</li>
+				<li song="05 - Hit the Floor.mp3" cover="Meteora.png" album-name="Meteora">Hit the Floor</li>
+				<li song="06 - Easier to Run.mp3" cover="Meteora.png" album-name="Meteora">Easier to Run</li>
+				<li song="07 - Faint.mp3" cover="Meteora.png" album-name="Meteora">Faint</li>
+				<li song="08 - Figure.09.mp3" cover="Meteora.png" album-name="Meteora">Figure.09</li>
+				<li song="09 - Breaking the Habit.mp3" cover="Meteora.png" album-name="Meteora">Breaking the Habit</li>
+				<li song="10 - From the Inside.mp3" cover="Meteora.png" album-name="Meteora">From the Inside</li>
+				<li song="11 - Nobody's Listening.mp3" cover="Meteora.png" album-name="Meteora">Nobody's Listening</li>
+				<li song="12 - Session.mp3" cover="Meteora.png" album-name="Meteora">Session</li>
+				<li song="13 - Numb.mp3" cover="Meteora.png" album-name="Meteora">Numb</li>
+			</ul>
+			<div class="tracker">
+				<div class="progressBar">
+					<span class="progress"></span>
+				</div>
+				<span class="currentTime"></span>/<span class="duration"></span>
+			</div>
+			<div class="buttons">
+				<span>
+					<button class="prev"></button>
+					<button class="play"></button>
+					<button class="pause"></button>
+					<button class="stop"></button>
+					<button class="next"></button>
+				</span>
+				</div>
+				<div class="volume">
+					<button class="volume-button" ></button>
+					<input class="volume-bar" type="range" min="0" max="10" value="5" />
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="albums-songs" album-track="item-4">
+		<div class="container">
+			<button class="close-button" >X</button>
+			<button class="playlist-button"></button>
+			<div class="audio-image">
+				<img class="cover" />
+			</div>
+			<div class="audio-player">
+			<div class="audio-info">
+				<h1 class="album-names"></h1>
+				<p class="song-name"></p>
+			</div>
+			<ul class="album-playlist connectedSortable connect" >
+				<li song="01 - Wake.mp3" cover="Minutes to Midnight.png" album-name="Minutes to Midnight">Wake</li>
+				<li song="02 - Given Up.mp3" cover="Minutes to Midnight.png" album-name="Minutes to Midnight">Given Up</li>
+				<li song="03 - Leave Out All the Rest.mp3" cover="Minutes to Midnight.png" album-name="Minutes to Midnight">Leave Out All the Rest</li>
+				<li song="04 - Bleed it Out.mp3" cover="Minutes to Midnight.png" album-name="Minutes to Midnight">Bleed it Out</li>
+				<li song="05 - Shadow of the Day.mp3" cover="Minutes to Midnight.png" album-name="Minutes to Midnight">Shadow of the Day</li>
+				<li song="06 - What I've Done.mp3" cover="Minutes to Midnight.png" album-name="Minutes to Midnight">What I've Done</li>
+				<li song="07 - Hands Held High.mp3" cover="Minutes to Midnight.png" album-name="Minutes to Midnight">Hands Held High</li>
+				<li song="08 - No More Sorrow.mp3" cover="Minutes to Midnight.png" album-name="Minutes to Midnight">No More Sorrow</li>
+				<li song="09 - Valentine's Day.mp3" cover="Minutes to Midnight.png" album-name="Minutes to Midnight">Valentine's Day</li>
+				<li song="10 - In Between.mp3" cover="Minutes to Midnight.png" album-name="Minutes to Midnight">In Between</li>
+				<li song="11 - In Pieces.mp3" cover="Minutes to Midnight.png" album-name="Minutes to Midnight">In Pieces</li>
+				<li song="12 - The Little Things Give You Away.mp3" cover="Minutes to Midnight.png" album-name="Minutes to Midnight">The Little Things Give You Away</li>
+				<li song="13 - No Roads Left.mp3" cover="Minutes to Midnight.png" album-name="Minutes to Midnight">No Roads Left</li>
+			</ul>
+			<div class="tracker">
+				<div class="progressBar">
+					<span class="progress"></span>
+				</div>
+				<span class="currentTime"></span>/<span class="duration"></span>
+			</div>
+			<div class="buttons">
+				<span>
+					<button class="prev"></button>
+					<button class="play"></button>
+					<button class="pause"></button>
+					<button class="stop"></button>
+					<button class="next"></button>
+				</span>
+				</div>
+				<div class="volume">
+					<button class="volume-button" ></button>
+					<input class="volume-bar" type="range" min="0" max="10" value="5" />
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="albums-songs" album-track="item-5">
+		<div class="container">
+			<button class="close-button" >X</button>
+			<button class="playlist-button"></button>
+			<div class="audio-image">
+				<img class="cover" />
+			</div>
+			<div class="audio-player">
+			<div class="audio-info">
+				<h1 class="album-names"></h1>
+				<p class="song-name"></p>
+			</div>
+			<ul class="album-playlist connectedSortable connect" >
+				<li song="Linkin Park - New Divide.mp3" cover="New Divide.png" album-name="New Divide">New Divide</li>
+			</ul>
+			<div class="tracker">
+				<div class="progressBar">
+					<span class="progress"></span>
+				</div>
+				<span class="currentTime"></span>/<span class="duration"></span>
+			</div>
+			<div class="buttons">
+				<span>
+					<button class="prev"></button>
+					<button class="play"></button>
+					<button class="pause"></button>
+					<button class="stop"></button>
+					<button class="next"></button>
+				</span>
+				</div>
+				<div class="volume">
+					<button class="volume-button" ></button>
+					<input class="volume-bar" type="range" min="0" max="10" value="5" />
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="albums-songs" album-track="item-6">
+		<div class="container">
+			<button class="close-button" >X</button>
+			<button class="playlist-button"></button>
+			<div class="audio-image">
+				<img class="cover" />
+			</div>
+			<div class="audio-player">
+			<div class="audio-info">
+				<h1 class="album-names"></h1>
+				<p class="song-name"></p>
+			</div>
+			<ul class="album-playlist connectedSortable connect" >
+				<li song="01 - The Requiem.mp3" cover="A Thousand Suns.png" album-name="A Thousand Suns">The Requiem</li>
+				<li song="02 - The Radiance.mp3" cover="A Thousand Suns.png" album-name="A Thousand Suns">The Radiance</li>
+				<li song="03 - Burning In The Skies.mp3" cover="A Thousand Suns.png" album-name="A Thousand Suns">Burning In The Skies</li>
+				<li song="04 - Empty Spaces.mp3" cover="A Thousand Suns.png" album-name="A Thousand Suns">Empty Spaces</li>
+				<li song="05 - When They Come For Me.mp3" cover="A Thousand Suns.png" album-name="A Thousand Suns">When They Come For Me</li>
+				<li song="06 - Robot Boy.mp3" cover="A Thousand Suns.png" album-name="A Thousand Suns">Robot Boy</li>
+				<li song="07 - Jornada Del Muerto.mp3" cover="A Thousand Suns.png" album-name="A Thousand Suns">Jornada Del Muerto</li>
+				<li song="08 - Waiting For The End.mp3" cover="A Thousand Suns.png" album-name="A Thousand Suns">Waiting For The End</li>
+				<li song="09 - Blackout.mp3" cover="A Thousand Suns.png" album-name="A Thousand Suns">Blackout</li>
+				<li song="10 - Wretches And Kings.mp3" cover="A Thousand Suns.png" album-name="A Thousand Suns">Wretches And Kings</li>
+				<li song="11 - Wisdom, Justice, And Love.mp3" cover="A Thousand Suns.png" album-name="A Thousand Suns">Wisdom, Justice, And Love</li>
+				<li song="12 - Iridescent.mp3" cover="A Thousand Suns.png" album-name="A Thousand Suns">Iridescent</li>
+				<li song="13 - Fallout.mp3" cover="A Thousand Suns.png" album-name="A Thousand Suns">Fallout</li>
+				<li song="14 - The Catalyst.mp3" cover="A Thousand Suns.png" album-name="A Thousand Suns">The Catalyst</li>
+				<li song="15 - The Messenger.mp3" cover="A Thousand Suns.png" album-name="A Thousand Suns">The Messenger</li>
+			</ul>
+			<div class="tracker">
+				<div class="progressBar">
+					<span class="progress"></span>
+				</div>
+				<span class="currentTime"></span>/<span class="duration"></span>
+			</div>
+			<div class="buttons">
+				<span>
+					<button class="prev"></button>
+					<button class="play"></button>
+					<button class="pause"></button>
+					<button class="stop"></button>
+					<button class="next"></button>
+				</span>
+				</div>
+				<div class="volume">
+					<button class="volume-button" ></button>
+					<input class="volume-bar" type="range" min="0" max="10" value="5" />
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="albums-songs" album-track="item-7">
+		<div class="container">
+			<div class="audio-image">
+				<img class="cover" />
+			</div>
+			<div class="audio-player">
+			<div class="audio-info">
+				<h1 class="album-names"></h1>
+				<p class="song-name"></p>
+				<button class="close-button" >X</button>
+				<button class="playlist-button"></button>
+			</div>
+			<ul class="album-playlist connectedSortable connect" >
+				<li song="01 - LOST IN THE ECHO.mp3" cover="Living Things.png" album-name="Living Things">Lost in the echo</li>
+				<li song="02 - IN MY REMAINS.mp3" cover="Living Things.png" album-name="Living Things">In my remains</li>
+				<li song="03 - BURN IT DOWN.mp3" cover="Living Things.png" album-name="Living Things">Burn it down</li>
+				<li song="04 - LIES GREED MISERY.mp3" cover="Living Things.png" album-name="Living Things">Lies Greed Misery</li>
+				<li song="05 - I'LL BE GONE.mp3" cover="Living Things.png" album-name="Living Things">I'll be gone</li>
+				<li song="06 - CASTLE OF GLASS.mp3" cover="Living Things.png" album-name="Living Things">Castle of glass</li>
+				<li song="07 - VICTIMIZED.mp3" cover="Living Things.png" album-name="Living Things">Victimized</li>
+				<li song="08 - ROADS UNTRAVELED.mp3" cover="Living Things.png" album-name="Living Things">Roads untraveled</li>
+				<li song="09 - SKIN TO BONE.mp3" cover="Living Things.png" album-name="Living Things">Skin to bone</li>
+				<li song="10 - UNTIL IT BREAKS.mp3" cover="Living Things.png" album-name="Living Things">Until it breaks</li>
+				<li song="11 - TINFOIL.mp3" cover="Living Things.png" album-name="Living Things">Tinfoil</li>
+				<li song="12 - POWERLESS.mp3" cover="Living Things.png" album-name="Living Things">Powerless</li>
+			</ul>
+			<div class="tracker">
+				<div class="progressBar">
+					<span class="progress"></span>
+				</div>
+				<span class="currentTime"></span>/<span class="duration"></span>
+			</div>
+			<div class="buttons">
+				<span>
+					<button class="prev"></button>
+					<button class="play"></button>
+					<button class="pause"></button>
+					<button class="stop"></button>
+					<button class="next"></button>
+				</span>
+				</div>
+				<div class="volume">
+					<button class="volume-button" ></button>
+					<input class="volume-bar" type="range" min="0" max="10" value="5" />
+					<button class="playlist-button"></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="albums-songs" album-track="item-8">
+		<div class="container">
+			<button class="close-button" >X</button>
+			<button class="playlist-button"></button>
+			<div class="audio-image">
+				<img class="cover" />
+			</div>
+			<div class="audio-player">
+			<div class="audio-info">
+				<h1 class="album-names"></h1>
+				<p class="song-name"></p>
+			</div>
+			<ul class="album-playlist connectedSortable connect" >
+				<li song="01 - A Light That Never Comes.mp3" cover="Recharged.png" album-name="Recharged">A Light That Never Comes</li>
+				<li song="02 -  Castle Of Glass (M. Shinoda Remix).mp3" cover="Recharged.png" album-name="Recharged">Castle Of Glass (M. Shinoda Remix)</li>
+				<li song="03 -  Lost In The Echo (Killsonik Remix).mp3" cover="Recharged.png" album-name="Recharged">Lost In The Echo (Killsonik Remix)</li>
+				<li song="04 -  Victimized (M. Shinoda Remix).mp3" cover="Recharged.png" album-name="Recharged">Victimized (M. Shinoda Remix)</li>
+				<li song="05 -  I'll Be Gone (Vice Remix) Ft. Pusha T.mp3" cover="Recharged.png" album-name="Recharged">I'll Be Gone (Vice Remix) Ft. Pusha T</li>
+				<li song="06 -  Lies Greed Misery (Dirtyphonics Remix).mp3" cover="Recharged.png" album-name="Recharged">Lies Greed Misery (Dirtyphonics Remix)</li>
+				<li song="07 -  Roads Untraveled (Rad Omen Remix) Ft. Bun B.mp3" cover="Recharged.png" album-name="Recharged">Roads Untraveled (Rad Omen Remix) Ft. Bun B</li>
+				<li song="08 -  Powerless (Enferno Remix).mp3" cover="Recharged.png" album-name="Recharged">Powerless (Enferno Remix)</li>
+				<li song="09 -  Burn It Down (Tom Swoon Remix).mp3" cover="Recharged.png" album-name="Recharged">Burn It Down (Tom Swoon Remix)</li>
+				<li song="10 -  Until It Breaks (Datsik Remix).mp3" cover="Recharged.png" album-name="Recharged">Until It Breaks (Datsik Remix)</li>
+				<li song="11 -  Skin To Bone (Nick Catchdubs Remix) Ft. Cody B. Ware And Ryu.mp3" cover="Recharged.png" album-name="Recharged">Skin To Bone (Nick Catchdubs Remix) Ft. Cody B. Ware And Ryu</li>
+				<li song="12 -  I'll Be Gone (Schoolboy Remix).mp3" cover="Recharged.png" album-name="Recharged">I'll Be Gone (Schoolboy Remix)</li>
+				<li song="13 -  Until It Breaks (Money Mark Headphone Remix).mp3" cover="Recharged.png" album-name="Recharged">Until It Breaks (Money Mark Headphone Remix)</li>
+				<li song="14 -  A Light That Never Comes (Rick Rubin Reboot).mp3" cover="Recharged.png" album-name="Recharged">A Light That Never Comes (Rick Rubin Reboot)</li>
+				<li song="15 -  Burn It Down.mp3" cover="Recharged.png" album-name="Recharged">Burn It Down</li>
+			</ul>
+			<div class="tracker">
+				<div class="progressBar">
+					<span class="progress"></span>
+				</div>
+				<span class="currentTime"></span>/<span class="duration"></span>
+			</div>
+			<div class="buttons">
+				<span>
+					<button class="prev"></button>
+					<button class="play"></button>
+					<button class="pause"></button>
+					<button class="stop"></button>
+					<button class="next"></button>
+				</span>
+				</div>
+				<div class="volume">
+					<button class="volume-button" ></button>
+					<input class="volume-bar" type="range" min="0" max="10" value="5" />
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="albums-songs" album-track="item-9">
+		<div class="container">
+			<button class="close-button" >X</button>
+			<button class="playlist-button"></button>
+			<div class="audio-image">
+				<img class="cover" />
+			</div>
+			<div class="audio-player">
+			<div class="audio-info">
+				<h1 class="album-names"></h1>
+				<p class="song-name"></p>
+			</div>
+			<ul class="album-playlist connectedSortable connect" >
+				<li song="01 - Keys To The Kingdon.mp3" cover="The Hunting Party.png" album-name="The Hunting Party">Keys To The Kingdon</li>
+				<li song="02 - All For Nothing.mp3" cover="The Hunting Party.png" album-name="The Hunting Party">All For Nothing</li>
+				<li song="03 - Guilty All The Same.mp3" cover="The Hunting Party.png" album-name="The Hunting Party">Guilty All The Same</li>
+				<li song="04 - The Summoning.mp3" cover="The Hunting Party.png" album-name="The Hunting Party">The Summoning</li>
+				<li song="05 - War.mp3" cover="The Hunting Party.png" album-name="The Hunting Party">War</li>
+				<li song="06 - Wastelands.mp3" cover="The Hunting Party.png" album-name="The Hunting Party">Wastelands</li>
+				<li song="07 - Until It's Gone.mp3" cover="The Hunting Party.png" album-name="The Hunting Party">Until It's Gone</li>
+				<li song="08 - Rebellion Feat. Daron Malakian.mp3" cover="The Hunting Party.png" album-name="The Hunting Party">Rebellion</li>
+				<li song="09 - Mark The Graves.mp3" cover="The Hunting Party.png" album-name="The Hunting Party">Mark The Graves</li>
+				<li song="10 - Drawbar Feat. Tom Morello.mp3" cover="The Hunting Party.png" album-name="The Hunting Party">Drawbar</li>
+				<li song="11 - Final Masquerade.mp3" cover="The Hunting Party.png" album-name="The Hunting Party">Final Masquerade</li>
+				<li song="12 - A Line In The Sand.mp3" cover="The Hunting Party.png" album-name="The Hunting Party">A Line In The Sand</li>
+			</ul>
+			<div class="tracker">
+				<div class="progressBar">
+					<span class="progress"></span>
+				</div>
+				<span class="currentTime"></span>/<span class="duration"></span>
+			</div>
+			<div class="buttons">
+				<span>
+					<button class="prev"></button>
+					<button class="play"></button>
+					<button class="pause"></button>
+					<button class="stop"></button>
+					<button class="next"></button>
+				</span>
+				</div>
+				<div class="volume">
+					<button class="volume-button" ></button>
+					<input class="volume-bar" type="range" min="0" max="10" value="5" />
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="albums-songs" album-track="item-10">
+		<div class="container">
+			<button class="close-button" >X</button>
+			<button class="playlist-button"></button>
+			<div class="audio-image">
+				<img class="cover" />
+			</div>
+			<div class="audio-player">
+			<div class="audio-info">
+				<h1 class="album-names"></h1>
+				<p class="song-name"></p>
+			</div>
+			<ul class="album-playlist connectedSortable connect" >
+				<li song="01 - Nobody Can Save Me.mp3" cover="One More Light.png" album-name="One More Light">Nobody Can Save Me</li>
+				<li song="02 - Good Goodbye.mp3" cover="One More Light.png" album-name="One More Light">Good Goodbye</li>
+				<li song="03 - Talking to Myself.mp3" cover="One More Light.png" album-name="One More Light">Talking to Myself</li>
+				<li song="04 - Battle Symphony.mp3" cover="One More Light.png" album-name="One More Light">Battle Symphony</li>
+				<li song="05 - Invisible.mp3" cover="One More Light.png" album-name="One More Light">Invisible</li>
+				<li song="06 - Heavy.mp3" cover="One More Light.png" album-name="One More Light">Heavy</li>
+				<li song="07 - Sorry for Now.mp3" cover="One More Light.png" album-name="One More Light">Sorry for Now</li>
+				<li song="08 - Halfway Right.mp3" cover="One More Light.png" album-name="One More Light">Halfway Right</li>
+				<li song="09 - One More Light.mp3" cover="One More Light.png" album-name="One More Light">One More Light</li>
+				<li song="10 - Sharp Edges.mp3" cover="One More Light.png" album-name="One More Light">Sharp Edges</li>
+			</ul>
+			<div class="tracker">
+				<div class="progressBar">
+					<span class="progress"></span>
+				</div>
+				<span class="currentTime"></span>/<span class="duration"></span>
+			</div>
+			<div class="buttons">
+				<span>
+					<button class="prev"></button>
+					<button class="play"></button>
+					<button class="pause"></button>
+					<button class="stop"></button>
+					<button class="next"></button>
+				</span>
+				</div>
+				<div class="volume">
+					<button class="volume-button" ></button>
+					<input class="volume-bar" type="range" min="0" max="10" value="5" />
+					<button class="playlist-button"></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section id="playlist" class="albums-songs">
+		<div id="playlist-container">
+			<div id="cover-image">
+				<img class="cover" />
+			</div>
+			<div id="custom-playlist-body">
+				<div class="audio-info">
+					<h1 class="album-names"></h1>
+					<button class="close-button2" >X</button>
+					<button id="clear-playlist" >Clear Playlist</button>
+				</div>
+				<ul class="connectedSortable list" >
+				</ul>
+				<div class="tracker">
+					<div class="progressBar">
+						<span class="progress"></span>
+					</div>
+					<span class="currentTime"></span>/<span class="duration"></span>
+				</div>
+				<div class="buttons">
+					<span>
+						<button class="media-buttons prev2"></button>
+						<button class="media-buttons play2"></button>
+						<button class="media-buttons pause2"></button>
+						<button class="media-buttons stop2"></button>
+						<button class="media-buttons next2"></button>
+					</span>
+				</div>
+				<div class="volume">
+					<button class="volume-button" ></button>
+					<input class="volume-bar" type="range" min="0" max="10" value="5" />
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div>© <p id="copyright-year"></p></div>
+		<div id="contact-info"><p>xxxxx@xxxxxxxx.com<br>239 234 234523<br>(Random number)</p></div>
+	</footer>
 </body>
 </html>
