@@ -72,9 +72,7 @@ input.volume-bar {
 	margin-left: 4%;
 	background-color: #1a1a1a;
     box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
-	-o-border-radius:4px;
-   -moz-border-radius:4px;
-   -webkit-border-radius:4px;
+	border-radius:4px;
 }
 .volume span{
 	position:relative;
@@ -87,9 +85,7 @@ input.volume-bar {
 	pointer-events: none;
 	background-color: lightgray;
     box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
-	-o-border-radius:4px;
-   -moz-border-radius:4px;
-   -webkit-border-radius:4px;
+	border-radius:4px;
     display:block;
     position:absolute;
 	z-index:2;
@@ -105,7 +101,6 @@ input#volume-bar  {
 }
 input.volume-bar::-webkit-slider-thumb {
     -webkit-appearance: none !important;
-    background:url(../Assets/Media Controls/knob.png) no-repeat;
     height:5%;
     width:5%;
 	position:relative;
@@ -117,13 +112,9 @@ input.volume-bar::-ms-fill-lower{
 	width:60%;
 	height:100%;
 	box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
-	-o-border-radius:4px;
-   -moz-border-radius:4px;
-   -webkit-border-radius:4px;
 }
 input.volume-bar::-moz-range-thumb {
     -webkit-appearance: none !important;
-    background:url(../Assets/Media Controls/knob.png) no-repeat;
     height:0.9em;
     width:0.9em;
 }
@@ -132,9 +123,7 @@ input.volume-bar::-moz-range-progress {
 	width:60%;
 	height:100%;
 	box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
-	-o-border-radius:4px;
-   -moz-border-radius:4px;
-   -webkit-border-radius:4px;
+	border-radius:4px;
 }
 input.volume-bar::-moz-range-track{
     background-color: transparent;
@@ -157,7 +146,6 @@ button.play{
 	image-rendering: -moz-crisp-edges;         /* Firefox */
 	image-rendering:   -o-crisp-edges;         /* Opera */
 	image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
-	image-rendering: crisp-edges;
 	-ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 }
 
@@ -171,7 +159,6 @@ button.pause{
 	image-rendering: -moz-crisp-edges;         /* Firefox */
 	image-rendering:   -o-crisp-edges;         /* Opera */
 	image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
-	image-rendering: crisp-edges;
 	-ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 }
 
@@ -185,7 +172,6 @@ button.stop{
 	image-rendering: -moz-crisp-edges;         /* Firefox */
 	image-rendering:   -o-crisp-edges;         /* Opera */
 	image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
-	image-rendering: crisp-edges;
 	-ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 }
 
@@ -199,7 +185,6 @@ button.prev{
 	image-rendering: -moz-crisp-edges;         /* Firefox */
 	image-rendering:   -o-crisp-edges;         /* Opera */
 	image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
-	image-rendering: crisp-edges;
 	-ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 }
 
@@ -213,7 +198,6 @@ button.next{
 	image-rendering: -moz-crisp-edges;         /* Firefox */
 	image-rendering:   -o-crisp-edges;         /* Opera */
 	image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
-	image-rendering: crisp-edges;
 	-ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 }
 .buttons:after {
@@ -241,7 +225,6 @@ button.next{
 	image-rendering: -moz-crisp-edges;         /* Firefox */
 	image-rendering:   -o-crisp-edges;         /* Opera */
 	image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
-	image-rendering: crisp-edges;
 	-ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 }
 .album-playlist {
@@ -257,7 +240,7 @@ button.next{
 
 .album-playlist::-webkit-scrollbar{
 	width: 10px;
-	background-color: #3343;
+	background-color: #343434;
 }
 
 .album-playlist::-webkit-scrollbar-thumb{
@@ -460,4 +443,5 @@ button.next{
     font-size: 32px;
     font-size: 5vh;
     padding-left: 10vw;
+}
 }

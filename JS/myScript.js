@@ -3,7 +3,6 @@ var painting = new Image();
 var bgImg2 = new Image();
 title.src="Assets/Imagine2.png";
 painting.src = "Assets/General.png"
-//bgImg2.src = "Assets/bg2.png";
 var albumList;
 var audio;
 var list;
@@ -12,7 +11,6 @@ $(window).load(function() {
 	$( 'body' ).addClass(' loaded');
 	$( '#names' ).css('background-image','url('+title.src+')');
 	$( '#general_painting_face' ).css('background-image','url('+painting.src+')');
-	//$( '#members_background' ).css('background-image','url('+bgImg2.src+')');
 });
 
 $(function(){
@@ -187,17 +185,21 @@ $(function(){
 	
 	//Play Button
 	$('.play').click(function(){
-		if(!audio)
-			initAudio('.connect li:first-child');
-		$('audio').each(function(){
-			this.pause(); 
-			this.currentTime = 0; 
-		});
+		if($('.play2').is(':hidden') && $('.list li').is('active') == true)
+		{
+			audio.setAttribute('src',''); 
+			audio.load(); 
+			audio.pause();
+			initAudio($('.connect li:first-child'));
+			$('.play2').show();
+			$('.pause2').hide();
+		}
 		audio.play();
 		$('.play').hide();
 		$('.pause').show();
 		$('.duration').fadeIn(400);
 		showDuration();
+		clickBtn = true;
 	});
 
 	//Pause Button
@@ -248,16 +250,19 @@ $(function(){
 	});
 	
 	//Playlist Song Click
-	$('.connect li').click(function () {
+	$(document).on('click', '.connect li', function () {
 		audio.setAttribute('src',''); 
 		audio.load(); 
 		audio.pause();
 		initAudio($(this));
 		$('.play').hide();
 		$('.pause').show();
+		$('.play2').show();
+		$('.pause2').hide();
 		$('.duration').fadeIn(400);
 		audio.play();
 		showDuration();
+		clickBtn = true;
 	});
 	
 	$('.playlist-button').click(function(){
@@ -308,21 +313,25 @@ $(function(){
 	
 	//Play Button
 	$('.play2').click(function(){
-		if(clickBtn == false){
+		if(clickBtn == false ){
 			clickBtn = true;
 			initAudio($('.list li:first-child'));
 		}
-		else
+		if($('.play').is(':hidden') && $('.connet li').is('active') == 'true')
 		{
 			audio.setAttribute('src',''); 
 			audio.load(); 
 			audio.pause();
+			initAudio($('.list li:first-child'));
+			$('.play').show();
+			$('.pause').hide();
 		}
 		audio.play();
 		$('.play2').hide();
 		$('.pause2').show();
 		$('.duration').fadeIn(400);
 		showDuration();
+		clickBtn = true;
 	});
 
 	//Pause Button
@@ -349,7 +358,7 @@ $(function(){
 	clickBtn = false;
 	
 	//Playlist Song Click
-	$('.list li').click(function () {
+	$(document).on('click', '.list li', function () {
 		if(clickBtn == false){
 			clickBtn = true;
 		}
@@ -362,9 +371,12 @@ $(function(){
 		initAudio($(this));
 		$('.play2').hide();
 		$('.pause2').show();
+		$('.play').show();
+		$('.pause').hide();
 		$('.duration').fadeIn(400);
 		audio.play();
 		showDuration();
+		clickBtn = true;
 	});
 
 	//Volume Control
@@ -461,25 +473,10 @@ $(function(){
 	})
 	
 	$('.connect').sortable({
-    connectWith: '.connectedSortable',
+    connectWith: '.list',
 	cursor: 'move',
     helper: function (e, li) {
-		if($('.connectedSortable li').length == 0)
-		{this.copyHelper = li.clone().append(li);
-		 var songWanted = li.clone().wrap("<div></div>").parent().html();
-		 console.log(songWanted);
-		 array.push(songWanted);
-		 localStorage.setItem('songWanted', JSON.stringify(array));
-		 console.log(array);
-		}
-		else
-		{this.copyHelper = li.clone().insertAfter(li);
-		var songWanted = li.clone().wrap("<div></div>").parent().html();
-		console.log(songWanted);
-		array.push(songWanted);
-		localStorage.setItem('songWanted', JSON.stringify(array));
-		console.log(JSON.stringify(array));
-		}
+		this.copyHelper = li.clone().insertAfter(li);
         $(this).data('copied', false);
         return li.clone();
     },
@@ -487,22 +484,31 @@ $(function(){
     stop: function () {
 
         var copied = $(this).data('copied');
-
         if (!copied) {
             this.copyHelper.remove();
         }
-
+		else
+		{
+			var songWanted = this.copyHelper.wrap("<div></div>").parent().html();
+			songWanted = songWanted.replace('<div>','');
+			songWanted = songWanted.replace('</div>','');
+			console.log(songWanted);
+			array.push(songWanted);
+			localStorage.setItem('songWanted', JSON.stringify(array));
+			console.log(JSON.stringify(array));
+			$('.album-playlist div li').unwrap();
+		}
         this.copyHelper = null;
     }
 	});
 	localStorage.setItem('songWanted', JSON.stringify(array));	
 	
-	$('.connectedSortable').sortable({
+	$('.list').sortable({
 		receive: function (e, ui) {
 			ui.sender.data('copied', true);
 			sortableIn = 1;
 		},
-		over: function(e, ui) { sortableIn = 1; localStorage.setItem('songWanted', JSON.stringify(array));},
+		over: function(e, ui) { sortableIn = 1;},
 		out: function(e, ui) { sortableIn = 0; },
 		beforeStop: function(e, ui) {
 			var removeOne = false;
@@ -510,9 +516,18 @@ $(function(){
 				ui.item.remove();
 				var contains = ui.item.wrap( '<div></div>' ).parent().html();
 				contains = contains.replace(' style=""','');
+				contains = contains.replace(' active" style="display: list-item;','');
 				contains = contains.replace(' style="display: list-item;"','');
+				contains = contains.replace("ui-sortable-handle","");
+				console.log(contains);
 				array = $.grep(array, function(value) {
+					value = value.replace( ' style="display: list-item;"','');
 					value = value.replace("ui-sortable-handle active","ui-sortable-handle");
+					value = value.replace("ui-sortable-handle","");
+					value = value.replace("<div>","");
+					value = value.replace('"<div class="ui-sortable-handle">"',"");
+					value = value.replace("</div>","");
+					console.log(value);
 					if(removeOne == false && value == contains)
 					{
 						removeOne = true;}
@@ -524,6 +539,11 @@ $(function(){
 			localStorage.setItem('songWanted', JSON.stringify(array));
 		} 
 	});
+	
+	$(document).on('click', '#PDFM', function () {
+		window.open('Assets/Web-Authoring-Item1.pdf','Web-Authoring-Item1');
+	});
+	
 	$('li').removeClass('active');
 	$('#copyright-year').html(new Date().getFullYear());
 });

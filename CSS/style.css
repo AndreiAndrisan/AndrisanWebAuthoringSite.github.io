@@ -118,21 +118,6 @@ p {
         0% {width: 0; }
       100% { width:  100%; } 
   } 
-  @-moz-keyframes slideIn
-  { 
-       0% { width: 0; }
-      100% { width:  100%; } 
-  } 
-  @-webkit-keyframes slideIn
-  { 
-       0% { width: 0; }
-      100% { width:  100%; } 
-  } 
-  @-o-keyframes slideIn
-  { 
-      0% { width: 0; }
-      100% { width:  100%; } 
-  } 
 #logo{
 	filter:invert(10%);
 	-webkit-filter:invert(10%);
@@ -157,23 +142,8 @@ body.loaded #logo{
 }
 @keyframes appear
   { 
-        0% {opacity: 0; }
-      100% { opacity:  1; } 
-  } 
-  @-moz-keyframes appear
-  { 
-        0% {opacity: 0; }
-      100% { opacity:  1; } 
-  } 
-  @-webkit-keyframes appear
-  { 
-        0% {opacity: 0; }
-      100% { opacity:  1; } 
-  } 
-  @-o-keyframes appear
-  { 
-        0% {opacity: 0; }
-      100% { opacity:  1; } 
+    0% {opacity: 0; }
+    100% { opacity:  1; } 
   } 
 header{
 	width:100vw;
@@ -188,7 +158,7 @@ header::after{
 	content:"";
 	left:-5vw;
 	position:absolute;
-	background: radial-gradient(#0000, rgba(255,255,255,0.3) 300%);
+	background: radial-gradient(transparent, rgba(255,255,255,0.3) 300%);
 }
 @media screen and (max-width: 975px) and (orientation:portrait){
 header {
@@ -583,12 +553,8 @@ body.loaded #names{
 	width:100%;
 	height:874px;
 }
-#general-text{
-	clip-path: polygon(0 0, 494.4px 0, 824px 824px, 824px 824px, 0 824px);
-}
 #general-text div {
 	height:874px;
-	shape-outside: polygon(494.4px 0, 824px 0, 824px 824px, 824px 824px);
 }
 }
 @media screen and (min-width: 1375px){
@@ -598,7 +564,6 @@ body.loaded #names{
 }
 #general-text div {
 	height:924px;
-	shape-outside: polygon(554.4px 0, 924px 0, 924px 924px, 924px 924px);
 }
 }
 @media screen and (min-width: 1600px){
@@ -606,12 +571,8 @@ body.loaded #names{
 	width:100%;
 	height:1024px;
 }
-#general-text{
-	clip-path: polygon(0 0, 614.4px 0, 1024px 1024px, 1024px 1024px, 0 1024px);
-}
 #general-text div {
 	height:1024px;
-	shape-outside: polygon(614.4px 0, 1024px 0, 1024px 1024px, 1024px 1024px);
 }
 }
 @media screen and (min-width: 1854px){
@@ -619,12 +580,8 @@ body.loaded #names{
 	width:100%;
 	height:1124px;
 }
-#general-text{
-	clip-path: polygon(0 0, 674.4px 0, 1124px 1124px, 1124px 1124px, 0 1124px);
-}
 #general-text div {
 	height:1124px;
-	shape-outside: polygon(674.4px 0, 1124px 0, 1124px 1124px, 1124px 1124px);
 }
 }
 @media screen and (min-width: 2000px){
@@ -632,12 +589,8 @@ body.loaded #names{
 	width:100%;
 	height:1224px;
 }
-#general-text{
-	clip-path: polygon(0 0, 734.4px 0, 1224px 1224px, 1224px 1224px, 0 1224px);
-}
 #general-text div {
 	height:1224px;
-	shape-outside: polygon(734.4px 0, 1224px 0, 1224px 1224px, 1224px 1224px);
 }
 }
 @media screen and (min-width: 2100px){
@@ -645,12 +598,8 @@ body.loaded #names{
 	width:100%;
 	height:1324px;
 }
-#general-text{
-	clip-path: polygon(0 0, 794.4px 0, 1324px 1324px, 1324px 1324px, 0 1324px);
-}
 #general-text div {
 	height:1324px;
-	shape-outside: polygon(794.4px 0, 1324px 0, 1324px 1324px, 1324px 1324px);
 }
 }
 @media screen and (min-width: 2200px){
@@ -658,12 +607,8 @@ body.loaded #names{
 	width:100%;
 	height:1424px;
 }
-#general-text{
-	clip-path: polygon(0 0, 854.4px 0, 1424px 1424px, 1424px 1424px, 0 1424px);
-}
 #general-text div {
 	height:1424px;
-	shape-outside: polygon(854.4px 0, 1424px 0, 1424px 1424px, 1424px 1424px);
 }
 }
 @media screen and (min-width: 2400px){
@@ -671,12 +616,8 @@ body.loaded #names{
 	width:100%;
 	height:1524px;
 }
-#general-text{
-	clip-path: polygon(0 0, 914.4px 0, 1524px 1524px, 1524px 1524px, 0 1524px);
-}
 #general-text div {
 	height:1524px;
-	shape-outside: polygon(914.4px 0, 1524px 0, 1524px 1524px, 1524px 1524px);
 }
 }
 @media screen and (min-width: 2600px){
@@ -684,12 +625,8 @@ body.loaded #names{
 	width:100%;
 	height:1624px;
 }
-#general-text{
-	clip-path: polygon(0 0, 974.4px 0, 1624px 1624px, 1624px 1624px, 0 1624px);
-}
 #general-text div {
 	height:1624px;
-	shape-outside: polygon(974.4px 0, 1624px 0, 1624px 1624px, 1624px 1624px);
 }
 }
 @media screen and (max-width: 490px){
@@ -697,12 +634,8 @@ body.loaded #names{
 	width:100%;
 	height:524px;
 }
-#general-text{
-	clip-path: polygon(0 0, 314.4px 0, 524px 524px, 524px 524px, 0 524px);
-}
 #general-text div {
 	height:524px;
-	shape-outside: polygon(314.4px 0, 524px 0, 524px 524px, 524px 524px);
 }
 p{
 	font-size: 2.5vw;
@@ -749,7 +682,7 @@ p{
     transform: translateY(0);
 }
 }
--webkit-@keyframes fadeInUp{
+@-webkit-keyframes fadeInUp{
 0% {
     opacity: 0;
     transform: translateY(-40px);
@@ -759,7 +692,7 @@ p{
     transform: translateY(0);
 }
 }
--moz-@keyframes fadeInUp{
+@-moz-keyframes fadeInUp{
 0% {
     opacity: 0;
     transform: translateY(-40px);
@@ -769,7 +702,7 @@ p{
     transform: translateY(0);
 }
 }
--o-@keyframes fadeInUp{
+@-o-keyframes fadeInUp{
 0% {
     opacity: 0;
     transform: translateY(-40px);
@@ -872,7 +805,7 @@ p{
     box-shadow: 20px -5px 25px 0 rgba(0, 0, 0, 0.5);
 }
 }
--webkit-@keyframes Up{
+@-webkit-keyframes Up{
 0% {
     box-shadow: none;
 }
@@ -884,7 +817,7 @@ p{
     box-shadow: 20px -5px 25px 0 rgba(0, 0, 0, 0.5);
 }
 }
--moz-@keyframes Up{
+@-moz-keyframes Up{
 0% {
     box-shadow: none;
 }
@@ -896,7 +829,7 @@ p{
     box-shadow: 20px -5px 25px 0 rgba(0, 0, 0, 0.5);
 }
 }
--o-@keyframes Up{
+@-o-keyframes Up{
 0% {
      box-shadow: none;
 }
@@ -1005,8 +938,6 @@ p{
 }
 .rectangles:nth-child(2){
 	border-radius: 3.125em 0 0 0;
-	-moz-border-radius:3.125em 0 0 0;
-	-webkit-border-radius:3.125em 0 0 0;
 	background-position:30% 10%;
 	border-color:#7d7579 #E9E7E4 #E9E7E4 #7d7579;
 	color:#7d7579;
@@ -1027,8 +958,6 @@ p{
 }
 .rectangles:nth-child(3){
 	border-radius: 0 0 0 0;
-	-moz-border-radius: 0 0 0 0;
-	-webkit-border-radius: 0 0 0 0;
 	border-color:#682c66 #E9E7E4 #E9E7E4 #E9E7E4;
 	color:#682c66;
 }
@@ -1049,8 +978,6 @@ p{
 }
 .rectangles:nth-child(4){
 	border-radius: 0 3.125em 0 0;
-	-moz-border-radius: 0 3.125em 0 0;
-	-webkit-border-radius: 0 3.125em 0 0;
 	border-color:#4785f8 #4785f8 #E9E7E4 #E9E7E4;
 	color:#4785f8;
 }
@@ -1071,8 +998,6 @@ p{
 }
 .rectangles:nth-child(5){
 	border-radius: 0 0 0 3.125em;
-	-moz-border-radius: 0 0 0 3.125em;
-	-webkit-border-radius: 0 0 0 3.125em;
 	border-color:#E9E7E4 #E9E7E4 #4900fc #4900fc;
 	color:#4900fc;
 }
@@ -1094,8 +1019,6 @@ p{
 }
 .rectangles:nth-child(6){
 	border-radius: 0 0 0 0;
-	-moz-border-radius: 0 0 0 0;
-	-webkit-border-radius: 0 0 0 0;
 	border-color:#E9E7E4 #E9E7E4 #f8011e #E9E7E4;
 	color:#f8011e;
 }
@@ -1123,8 +1046,6 @@ p{
 }
 .rectangles:nth-child(7){
 	border-radius:0 0 3.125em 0;
-	-moz-border-radius:0 0 3.125em 0;
-	-webkit-border-radius:0 0 3.125em 0;
 	border-color:#E9E7E4 #868353 #868353 #E9E7E4;
 	color:#868353;
 }
@@ -1344,7 +1265,7 @@ p{
 	position:absolute;
 	width:100%;
 	height:100%;
-	background: radial-gradient(#0000, #0d0d0d 70%);
+	background: radial-gradient(transparent, #0d0d0d 70%);
 }
 #albums{
 	position:relative;
@@ -1387,7 +1308,7 @@ p{
     -webkit-animation: fadeInUp2 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 	text-transform:uppercase;
 	display:none;
-	-webkit-transition: -webkit-fadeInUp2 1s;
+	-webkit-transition: fadeInUp2 1s;
     transition: fadeInUp2 1s;
 }
 .album_name::before{
@@ -1422,16 +1343,6 @@ p{
 	-webkit-box-reflect: below 0 -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(40%, transparent), to(rgba(255, 255, 255, 0.2)));
 	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.9);
 }
-#carousel img::before{
-	a-moz-transform: scaleY(-1);
-    a-o-transform: scaleY(-1);
-    a-webkit-transform: scaleY(-1);
-    atransform: scaleY(-1);
-	a-webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(40%, transparent), to(rgba(255, 255, 255, 0.2)));
-	aposition:absolute;
-	atop:100%;
-    aleft:0px;
-}
 @media screen and (max-width: 975px){
 #carousel img{
 	height:25vw;
@@ -1456,6 +1367,8 @@ p{
 	bottom:0;
 	font-size:10vw;
 	left:3vw;
+	width: 10vmax;
+    height: 10vmax;
 }
 #prev:hover{
 	opacity:0.8;
@@ -1466,6 +1379,8 @@ p{
 	bottom:0;
 	font-size:10vw;
 	left:91vw;
+	width: 10vmax;
+    height: 10vmax;
 }
 #next:hover{
 	opacity:0.8;
@@ -1478,7 +1393,7 @@ p{
     top:80%;
 }
 }
--webkit-@keyframes fadeInUp2{
+@-webkit-keyframes fadeInUp2{
 0% {
     top:60%;
 }
@@ -1486,7 +1401,7 @@ p{
     top:70%;
 }
 }
--o-@keyframes fadeInUp2{
+@-o-keyframes fadeInUp2{
 0% {
     top:60%;
 }
@@ -1494,7 +1409,7 @@ p{
     top:70%;
 }
 }
--moz-@keyframes fadeInUp2{
+@-moz-keyframes fadeInUp2{
 0% {
     top:60%;
 }
@@ -1520,7 +1435,7 @@ p{
 		-webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(30%, transparent), to(rgba(255, 255, 255, 0.6)));
 }
 }
--moz-@keyframes fadeInUp3{
+@-moz-keyframes fadeInUp3{
 0% {
     top:250%;
 		-webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(80%, transparent), to(rgba(255, 255, 255, 0.3)));
@@ -1538,7 +1453,7 @@ p{
 		-webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(30%, transparent), to(rgba(255, 255, 255, 0.6)));
 }
 }
--o-@keyframes fadeInUp3{
+@-o-keyframes fadeInUp3{
 0% {
     top:250%;
 		-webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(80%, transparent), to(rgba(255, 255, 255, 0.3)));
@@ -1556,7 +1471,7 @@ p{
 		-webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(30%, transparent), to(rgba(255, 255, 255, 0.6)));
 }
 }
--webkit-@keyframes fadeInUp3{
+@-webkit-keyframes fadeInUp3{
 0% {
     top:250%;
 		-webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(80%, transparent), to(rgba(255, 255, 255, 0.3)));
@@ -1642,8 +1557,8 @@ p{
 	bottom: 10%;
 }
 #custom-playlist-body .volume span{
-	top: -8%;
-    left: 19%;
+	top: -7.55%;
+    left: 26%;
 }
 .close-button2{
 	position:absolute;
@@ -1666,7 +1581,6 @@ button.prev2{
 	image-rendering: -moz-crisp-edges;         /* Firefox */
 	image-rendering:   -o-crisp-edges;         /* Opera */
 	image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
-	image-rendering: crisp-edges;
 	-ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 }
 
@@ -1680,7 +1594,6 @@ button.next2{
 	image-rendering: -moz-crisp-edges;         /* Firefox */
 	image-rendering:   -o-crisp-edges;         /* Opera */
 	image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
-	image-rendering: crisp-edges;
 	-ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 }
 
@@ -1694,7 +1607,6 @@ button.play2{
 	image-rendering: -moz-crisp-edges;         /* Firefox */
 	image-rendering:   -o-crisp-edges;         /* Opera */
 	image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
-	image-rendering: crisp-edges;
 	-ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 }
 
@@ -1708,7 +1620,6 @@ button.pause2{
 	image-rendering: -moz-crisp-edges;         /* Firefox */
 	image-rendering:   -o-crisp-edges;         /* Opera */
 	image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
-	image-rendering: crisp-edges;
 	-ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 }
 
@@ -1722,7 +1633,6 @@ button.stop2{
 	image-rendering: -moz-crisp-edges;         /* Firefox */
 	image-rendering:   -o-crisp-edges;         /* Opera */
 	image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
-	image-rendering: crisp-edges;
 	-ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 }
 
@@ -1739,7 +1649,6 @@ button.stop2{
 
 .list::-webkit-scrollbar{
 	width: 10px;
-	background-color: #3343;
 }
 
 .list::-webkit-scrollbar-thumb{
@@ -1786,7 +1695,6 @@ button.stop2{
 	image-rendering: -moz-crisp-edges;
     image-rendering: -o-crisp-edges;
     image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
     -ms-interpolation-mode: nearest-neighbor;
 }
 
@@ -1873,4 +1781,8 @@ footer div:nth-child(2){
 }
 #copyright-year{
 	display:inline;
+}
+
+#pdf{
+	display:none;
 }

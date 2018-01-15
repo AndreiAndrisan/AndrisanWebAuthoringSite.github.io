@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html  lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,12 +10,12 @@
 	<script type="text/javascript" src="JS/jquery.waterwheelCarousel.js"></script>
 	<script type="text/javascript" src="JS/jquery.ui.touch-punch.js"></script>
 	<script type="text/javascript" src="JS/myScript.js"></script>
-	<title>Exercise</title>
+	<title>Web Authoring Assessment Item 2</title>
 </head>
 <body>
 	<header>
-		<img id="logo-header" src="Assets/linkin-park-logo-5FB7797E5D-seeklogo.com.png">
-		<nav role="navigation">
+		<img id="logo-header" src="Assets/linkin-park-logo-5FB7797E5D-seeklogo.com.png" alt="logo">
+		<nav>
 			<div id="menuToggle">
 				<input type="checkbox">
 				<span></span>
@@ -34,13 +34,16 @@
 					<li>
 						<a href="#playlist" id="PlaylistM">Playlist</a>
 					</li>
+					<li>
+						<a href="#pdf" id="PDFM">PDF File</a>
+					</li>
 				</ul>
 			</div>
 		</nav>
 	</header>
 	<section id="intro">
 		<div id="shadow">
-			<img id="logo" src="Assets/linkin-park-logo-5FB7797E5D-seeklogo.com.png">
+			<img id="logo" src="Assets/linkin-park-logo-5FB7797E5D-seeklogo.com.png" alt="logo">
 			<div id="names"></div>
 		</div>
 	</section>
@@ -85,7 +88,7 @@
 			</h1>
 			<figure class="rectangles">
 				<div class="rectangles-content">
-					<img src="Assets/Instruments/Bass1.png">
+					<img src="Assets/Instruments/Bass1.png" alt="instrument">
 					<p>Bass</p>
 					<h1>Dave Farrell</h1>
 				</div>
@@ -94,32 +97,32 @@
 				<div class="rectangles-content">
 					<img src="Assets/Instruments/Mic2.png">
 					<p>Vocals</p>
-					<img src="Assets/Instruments/Electric-guitar2.png">
+					<img src="Assets/Instruments/Electric-guitar2.png" alt="instrument">
 					<p>Rhythm guitar</p>
-					<img src="Assets/Instruments/Keyboards2.png">
+					<img src="Assets/Instruments/Keyboards2.png" alt="instrument">
 					<p>Keyboards</p>
 					<h1>Mike Shinoda</h1>
 				</div>
 			</figure>
 			<figure class="rectangles">
 				<div class="rectangles-content">
-					<img src="Assets/Instruments/Electric-guitar1.png">
+					<img src="Assets/Instruments/Electric-guitar1.png" alt="instrument">
 					<p>Lead guitar</p>
 					<h1>Brad Delson</h1>
 				</div>
 			</figure>
 			<figure class="rectangles">
 				<div class="rectangles-content">
-					<img src="Assets/Instruments/Turntable3.png">
+					<img src="Assets/Instruments/Turntable3.png" alt="instrument">
 					<p>Turntables</p>
-					<img src="Assets/Instruments/Keyboards1.png">
+					<img src="Assets/Instruments/Keyboards1.png" alt="instrument">
 					<p>Keyboards</p>
 					<h1>Joe Hahn</h1>
 				</div>
 			</figure>
 			<figure class="rectangles">
 				<div class="rectangles-content">
-					<img src="Assets/Instruments/Mic1.png">
+					<img src="Assets/Instruments/Mic1.png" alt="instrument">
 					<p>Lead vocals</p>
 					<h1>Chester Bennington</h1>
 					<h2>(Died in 2017)</h2>
@@ -127,7 +130,7 @@
 			</figure>
 			<figure class="rectangles">
 				<div class="rectangles-content">
-					<img src="Assets/Instruments/Drums1.png">
+					<img src="Assets/Instruments/Drums1.png" alt="instrument">
 					<p>Drums</p>
 					<h1>Rob Bourdon</h1>
 				</div>
@@ -136,16 +139,16 @@
 	</section>
 	<section id="albums">
 		<div id="carousel">
-		  <a href="#"><img src="Assets/Covers/Hybrid Theory.png" id="item-1" /><h1 class="album_name" data-text="Hybrid Theory">Hybrid Theory</h1></a>
-		  <a href="#"><img src="Assets/Covers/Reanimation.png" id="item-2" /><h1 class="album_name" data-text="Reanimation">Reanimation</h1></a>
-		  <a href="#"><img src="Assets/Covers/Meteora.png" id="item-3" /><h1 class="album_name" data-text="Meteora">Meteora</h1></a>
-		  <a href="#"><img src="Assets/Covers/Minutes to Midnight.png" id="item-4" /><h1 class="album_name" data-text="Minutes to Midnight">Minutes to Midnight</h1></a>
-		  <a href="#"><img src="Assets/Covers/New Divide.png" id="item-5" /><h1 class="album_name" data-text="New Divide  (Single)">New Divide<br>(Single)</h1></a></a>
-		  <a href="#"><img src="Assets/Covers/A Thousand Suns.png" id="item-6" /><h1 class="album_name" data-text="A Thousand Suns">A Thousand Suns</h1></a>
-		  <a href="#"><img src="Assets/Covers/Living Things.png" id="item-7" /><h1 class="album_name" data-text="Living Things">Living Things</h1></a>
-		  <a href="#"><img src="Assets/Covers/Recharged.png" id="item-8" /><h1 class="album_name" data-text="Recharged">Recharged</h1></a>
-		  <a href="#"><img src="Assets/Covers/The Hunting Party.png" id="item-9" /><h1 class="album_name" data-text="The Hunting Party">The Hunting Party</h1></a>
-		  <a href="#"><img src="Assets/Covers/One More Light.png" id="item-10" /><h1 class="album_name" data-text="One More Light">One More Light</h1></a>
+		  <a href="#item-1"><img src="Assets/Covers/Hybrid Theory.png" id="item-1" /><h1 class="album_name" data-text="Hybrid Theory" alt="cover">Hybrid Theory</h1></a>
+		  <a href="#item-2"><img src="Assets/Covers/Reanimation.png" id="item-2" /><h1 class="album_name" data-text="Reanimation" alt="cover">Reanimation</h1></a>
+		  <a href="#item-3"><img src="Assets/Covers/Meteora.png" id="item-3" /><h1 class="album_name" data-text="Meteora" alt="cover">Meteora</h1></a>
+		  <a href="#item-4"><img src="Assets/Covers/Minutes to Midnight.png" id="item-4" /><h1 class="album_name" data-text="Minutes to Midnight" alt="cover">Minutes to Midnight</h1></a>
+		  <a href="#item-5"><img src="Assets/Covers/New Divide.png" id="item-5" /><h1 class="album_name" data-text="New Divide  (Single)" alt="cover">New Divide<br>(Single)</h1></a></a>
+		  <a href="#item-6"><img src="Assets/Covers/A Thousand Suns.png" id="item-6" /><h1 class="album_name" data-text="A Thousand Suns" alt="cover">A Thousand Suns</h1></a>
+		  <a href="#item-7"><img src="Assets/Covers/Living Things.png" id="item-7" /><h1 class="album_name" data-text="Living Things" alt="cover">Living Things</h1></a>
+		  <a href="#item-8"><img src="Assets/Covers/Recharged.png" id="item-8" /><h1 class="album_name" data-text="Recharged" alt="cover">Recharged</h1></a>
+		  <a href="#item-9"><img src="Assets/Covers/The Hunting Party.png" id="item-9" /><h1 class="album_name" data-text="The Hunting Party" alt="cover">The Hunting Party</h1></a>
+		  <a href="#item-10"><img src="Assets/Covers/One More Light.png" id="item-10" /><h1 class="album_name" data-text="One More Light" alt="cover">One More Light</h1></a>
 		</div>
 		<a href="#" id="prev"><</a>
 		<a href="#" id="next">></a>
@@ -155,7 +158,7 @@
 			<button class="close-button" >X</button>
 			<button class="playlist-button"></button>
 			<div class="audio-image">
-				<img class="cover" />
+				<img class="cover" alt="cover" />
 			</div>
 			<div class="audio-player">
 			<div class="audio-info">
@@ -206,7 +209,7 @@
 			<button class="close-button" >X</button>
 			<button class="playlist-button"></button>
 			<div class="audio-image">
-				<img class="cover" />
+				<img class="cover" alt="cover"/>
 			</div>
 			<div class="audio-player">
 			<div class="audio-info">
@@ -263,7 +266,7 @@
 			<button class="close-button" >X</button>
 			<button class="playlist-button"></button>
 			<div class="audio-image">
-				<img class="cover" />
+				<img class="cover" alt="cover"/>
 			</div>
 			<div class="audio-player">
 			<div class="audio-info">
@@ -313,7 +316,7 @@
 			<button class="close-button" >X</button>
 			<button class="playlist-button"></button>
 			<div class="audio-image">
-				<img class="cover" />
+				<img class="cover" alt="cover"/>
 			</div>
 			<div class="audio-player">
 			<div class="audio-info">
@@ -363,7 +366,7 @@
 			<button class="close-button" >X</button>
 			<button class="playlist-button"></button>
 			<div class="audio-image">
-				<img class="cover" />
+				<img class="cover" alt="cover"/>
 			</div>
 			<div class="audio-player">
 			<div class="audio-info">
@@ -401,7 +404,7 @@
 			<button class="close-button" >X</button>
 			<button class="playlist-button"></button>
 			<div class="audio-image">
-				<img class="cover" />
+				<img class="cover" alt="cover"/>
 			</div>
 			<div class="audio-player">
 			<div class="audio-info">
@@ -451,7 +454,7 @@
 	<div class="albums-songs" album-track="item-7">
 		<div class="container">
 			<div class="audio-image">
-				<img class="cover" />
+				<img class="cover" alt="cover"/>
 			</div>
 			<div class="audio-player">
 			<div class="audio-info">
@@ -502,7 +505,7 @@
 			<button class="close-button" >X</button>
 			<button class="playlist-button"></button>
 			<div class="audio-image">
-				<img class="cover" />
+				<img class="cover" alt="cover"/>
 			</div>
 			<div class="audio-player">
 			<div class="audio-info">
@@ -554,7 +557,7 @@
 			<button class="close-button" >X</button>
 			<button class="playlist-button"></button>
 			<div class="audio-image">
-				<img class="cover" />
+				<img class="cover" alt="cover"/>
 			</div>
 			<div class="audio-player">
 			<div class="audio-info">
@@ -603,7 +606,7 @@
 			<button class="close-button" >X</button>
 			<button class="playlist-button"></button>
 			<div class="audio-image">
-				<img class="cover" />
+				<img class="cover" alt="cover"/>
 			</div>
 			<div class="audio-player">
 			<div class="audio-info">
@@ -648,7 +651,7 @@
 	<section id="playlist" class="albums-songs">
 		<div id="playlist-container">
 			<div id="cover-image">
-				<img class="cover" />
+				<img class="cover" alt="cover"/>
 			</div>
 			<div id="custom-playlist-body">
 				<div class="audio-info">
